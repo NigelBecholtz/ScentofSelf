@@ -15,6 +15,7 @@ export const shopifyClient = domain && storefrontAccessToken
   ? Client.buildClient({
       domain: domain,
       storefrontAccessToken: storefrontAccessToken,
+      apiVersion: '2024-01',
     })
   : null
 
