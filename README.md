@@ -6,9 +6,10 @@ A modern, minimalist e-commerce website for Scent of Self perfumes, inspired by 
 
 - 🎨 Modern, Zara-inspired UI design
 - 🛍️ Product listing and detail pages
-- 🛒 Shopping cart functionality
+- 🛒 Shopify integrated checkout
 - 📱 Fully responsive design
 - ⚡ Built with React + TypeScript + Vite
+- 💳 Secure payments via Shopify
 
 ## Getting Started
 
@@ -30,12 +31,20 @@ A modern, minimalist e-commerce website for Scent of Self perfumes, inspired by 
    npm install
    ```
 
-4. Start the development server:
+4. **Configure Shopify** (see [SHOPIFY_SETUP.md](SHOPIFY_SETUP.md) for detailed instructions):
+   - Create a `.env` file in the project root
+   - Add your Shopify credentials:
+     ```env
+     VITE_SHOPIFY_STORE_DOMAIN=your-store.myshopify.com
+     VITE_SHOPIFY_STOREFRONT_ACCESS_TOKEN=your_token_here
+     ```
+
+5. Start the development server:
    ```bash
    npm run dev
    ```
 
-5. Open your browser and visit `http://localhost:5173`
+6. Open your browser and visit `http://localhost:5173`
 
 ### Building for Production
 
@@ -70,10 +79,11 @@ scentofselfperfumes/
 
 ## Technologies Used
 
-- **React 18** - UI library
+- **React 19** - UI library
 - **TypeScript** - Type safety
 - **Vite** - Build tool and dev server
 - **React Router** - Client-side routing
+- **Shopify Buy SDK** - E-commerce integration
 - **CSS3** - Styling
 
 ## Brand Information
